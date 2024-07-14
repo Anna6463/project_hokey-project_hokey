@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/libs/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/_prof.css">
+  <title>Profile</title>
+</head>
+<body>
+  <header class="header header__prof">
+    
+      <div class="header__wrap">
+        <button class="header__btn btn-reset">
+          <a href="index.html"><i class="fa fa-chevron-left header--icon" aria-hidden="true">Назад</i></a>
+        </button>
+        <h1 class="header__title">Профиль</h1>
+      </div>
+         
+  </header>
+  <main>
+    <section class="photo photo__prof ">
+      <div class="container">
+        <img class="photo__img" src="/img/photo_prof.webp" alt="your image" /><br />
+        <input type="file" name="AddImage" class="addImage" accept=".jpg, .jpeg, .png">
+      </div>
+    </section>
+
+    <section class="form form__prof">
+      <form action="#" class="profile">
+        <div class="prof__wrap">
+          <label for="prof__name">Имя <br>
+            <input type="text" class="prof__name" name="name" placeholder="Имя">
+            <i class="fa fa-pencil-square-o prof__icon" aria-hidden="true"></i>
+          </label>
+          
+        </div>
+        <div class="prof__wrap">
+          <input type="text" class="prof__lastname" name="lastname" placeholder="Фамилия">
+          <i class="fa fa-pencil-square-o prof__icon" aria-hidden="true"></i>
+        </div>
+        <div class="prof__wrap">
+          <label for="prof__position"></label>
+            <select name="position" class="prof__position">
+              <option value="defender">Защитник</option>
+              <option value="attack">Нападающий</option>
+              <option value="goalkeeper">Вратарь</option>
+            </select>
+        </div>
+        
+        <input type="date" class="prof__dateBirth" name="dateBirth" >
+        <div class="prof__switch">
+          <span>Уведомления хоккей</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+      </div>
+        <button class="prof__btn btn-reset">Сохранить</button>
+      </form>
+      
+    </section>
+  </main>
+
+   
+</body>
+</html>
